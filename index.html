@@ -3,24 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <title>Portfolio</title>
+  <title>Afroz Alam</title>
 </head>
 <body>
-  <header>
-    <h1>Mohammad Afroz Alam</h1>
+  <header id="home">
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="brand">Alaz<b>Oz</b></div>
+      <ul class="navItems">
+
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#skills">skills</a></li>
       </ul>
+      <div class="links">
+        <a href="https://linkedin.com/in/Alaz-Oz"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Alaz-Oz">     <i class="fab fa-github"></i></a>
+        <a href="https://reddit.com/user/AlazOz"> <i class="fab fa-reddit"></i></a>
+        <a href="https://youtube.com/@Alaz-Oz">  <i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/Alaz.Oz">  <i class="fab fa-instagram"></i></a>
+      </div>
     </nav>
   </header>
-
+  <div class="wrapper">
+    <div class="cols cols0">
+      <span class="topline">Hello</span>
+      <h1>I'm <span class="multiText">Afroz Alam</span></h1>
+      <p>I am a passionate software developer with a focus on Android app development, game development, and personal projects. As a fresher in the industry, I have gained valuable experience by working on various Android app projects and games. I have also collaborated with teams on different projects, showcasing excellent teamwork and communication skills.</p>
+      <div class="btn">
+        <button>hire me</button>
+      </div>
+    </div>
+    <div class="cols cols1">
+      <div class="imgbox">
+        <img src="./splash.png" id="splash">
+        <img src="./potrait.png" >
+      </div>
+    </div>
+  </div>
   <main>
     <section id="about">
       <h2>About</h2>
@@ -143,5 +165,15 @@
   <footer>
     <p>Copyright &copy; 2023 Mohammad Afroz Alam</p>
   </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('.multiText', {
+      strings: ["Afroz Alam", "Developer", "Designer", "Youtuber", "Freelancer"],
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
 </body>
 </html>
